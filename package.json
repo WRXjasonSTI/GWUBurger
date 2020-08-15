@@ -1,0 +1,27 @@
+{
+  "name": "gwuburger",
+  "version": "1.0.0",
+  "description": "App utilizing handlebars, express, sql, etc.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WRXjasonSTI/GWUBurger.git"
+  },
+  "keywords": [
+    "sadness"
+  ],
+  "author": "JCZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WRXjasonSTI/GWUBurger/issues"
+  },
+  "homepage": "https://github.com/WRXjasonSTI/GWUBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
