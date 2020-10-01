@@ -3,7 +3,7 @@ const express = require("express");
 const PORT = process.env.PORT || 6969;
 const app = express();
 
-//More Functionality
+//use of static files
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

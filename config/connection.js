@@ -1,4 +1,4 @@
-// Boilerplate Connection/Node to SQL Setup
+// Connection/Node to SQL Setup
 let mysql = require("mysql");
 let connection;
 

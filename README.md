@@ -77,28 +77,6 @@ When trying to connect remotely to your Heroku database on an open network such 
 
    * Close out of the MySQL command line tool: `exit`.
 
-#### Config Setup
-
-1. Inside your `burger` directory, create a folder named `config`.
-
-2. Create a `connection.js` file inside `config` directory.
-
-   * Inside the `connection.js` file, setup the code to connect Node to MySQL.
-
-   * Export the connection.
-
-3. Create an `orm.js` file inside `config` directory.
-
-   * Import (require) `connection.js` into `orm.js`
-
-   * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
-
-     * `selectAll()`
-     * `insertOne()`
-     * `updateOne()`
-
-   * Export the ORM object in `module.exports`.
-
 #### Model setup
 
 * Inside your `burger` directory, create a folder named `models`.

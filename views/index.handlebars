@@ -1,0 +1,40 @@
+<div class="header-div">
+    <h1>MVC Week with Burgers</h1>
+    <img src="/assets/img/download.png" />
+</div>
+
+<div class="form-div">
+    <h2>Create a new burger</h2>
+    <form class="burger-form">
+        <div class="form-group">
+            <label for="burger-input">New Burger</label>
+            <input type="text" id="burger-input" name="name">
+        </div>
+        <button type="submit">Add Burger</button>
+    </form>
+</div>
+
+<div class="flex-div">
+    <div class="flex-col-1">
+        <h2>Unconsumed Burgers</h2>
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>{{burger_name}} <button class="devour-button" id="{{id}}">Consume</button></li>
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="flex-col-2">
+        <h2>Consumed Burgers</h2>
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>{{burger_name}}</li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
+</div>
